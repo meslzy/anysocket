@@ -1,0 +1,11 @@
+[Unit]
+Description="AnySocket"
+After=network.target
+
+[Service]
+WorkingDirectory=/opt/anysocket
+ExecStart=/usr/bin/node ./packages/app
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

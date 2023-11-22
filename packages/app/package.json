@@ -1,0 +1,27 @@
+{
+  "name": "@anysocket/app",
+  "bin": {
+    "anysocket": "dist/bin.js"
+  },
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "type": "module",
+  "scripts": {
+    "watch": "rosepack -w",
+    "dev": "nodemon .",
+    "build": "rosepack",
+    "start": "node .",
+    "lint": "eslint lib --ext .ts --fix"
+  },
+  "dependencies": {
+    "commander": "^11.1.0",
+    "compression": "^1.7.4",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/compression": "^1.7.5",
+    "@types/express": "^4.17.21",
+    "@types/cors": "^2.8.17"
+  },
+  "private": true
+}
